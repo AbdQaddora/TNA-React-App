@@ -18,6 +18,7 @@ html * {
   --clr2: #707070;
   --clr3: #E50E7A;
   --clr4: #FBED18;
+  --body-bg:#F4F5F7;
   font-family: 'Red Hat Display', sans-serif;
   --trans: all 0.4s ease-in-out;
   --font-14: 14px;
@@ -26,7 +27,7 @@ html * {
 
 body {
   overflow-x: hidden;
-  background: #F4F5F7;
+  background: var(--body-bg);
   transition: var(--trans);
 }
 
@@ -116,4 +117,8 @@ input[type="radio"]:focus {
 
 .fs-md-5 {
   font-size: 1.30rem !important;
+}
+
+.fs-7 {
+  font-size: 0.8rem;
 }

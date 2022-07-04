@@ -1,0 +1,19 @@
+.swiper {
+    width: 100%;
+    height: fit-content;
+}
+
+.swiper * {
+    user-select: none;
+}
+
+.swiper-prev,
+.swiper-next {
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.swiper-slide {
+    width: fit-content !important;
+}
