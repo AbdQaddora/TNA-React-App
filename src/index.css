@@ -18,7 +18,7 @@ html * {
   --clr2: #707070;
   --clr3: #E50E7A;
   --clr4: #FBED18;
-  --body-bg:#F4F5F7;
+  --body-bg: #F4F5F7;
   font-family: 'Red Hat Display', sans-serif;
   --trans: all 0.4s ease-in-out;
   --font-14: 14px;
@@ -121,4 +121,17 @@ input[type="radio"]:focus {
 
 .fs-7 {
   font-size: 0.8rem;
+}
+
+/* custom scroll bar */
+/* width */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--clr2);
+  border-radius: 10px;
 }
