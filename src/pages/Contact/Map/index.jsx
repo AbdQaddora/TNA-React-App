@@ -9,10 +9,12 @@ import './map.css'
 
 export default function Map({ lat, lng }) {
     const mapElement = useRef(null);
-
+    const API_KEY = process.env.REACT_APP_TOM_TOM_API_KEY;
     useEffect(() => {
+        console.log(process.env);
+        console.log(API_KEY);
         let map = tt.map({
-            key: process.env.REACT_APP_TOM_TOM_API_KEY,
+            key: API_KEY,
             container: mapElement.current,
             center: [lng, lat],
             zoom: 13
