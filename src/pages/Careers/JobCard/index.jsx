@@ -11,7 +11,7 @@ export default function JobCard({ title, disc, path }) {
                 <p className="card-disc max-lines-4">
                     {disc}
                 </p>
-                <Link to={`/job-detail/${path}`}>
+                <Link to={`/careers/${path}`}>
                     <HiOutlineArrowNarrowRight className='fs-3' />
                 </Link>
             </div>

@@ -54,8 +54,8 @@ export default function JobForm() {
                 return { ...prev, CV: { value: "", error: true } }
             })
             return false;
-        } else if (!CV.value.endsWith('.pdf') || !CV.value.endsWith('.doc') || !CV.value.endsWith('.docx')) {
-            console.log();
+        } else if (!CV.value.endsWith('.pdf') && !CV.value.endsWith('.doc') && !CV.value.endsWith('.docx')) {
+            console.log("");
             setWrongInFileFormat(true);
         } else {
             setModalText("Your Application is in review. We will contact you soon!");
