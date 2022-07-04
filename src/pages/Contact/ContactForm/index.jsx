@@ -4,8 +4,11 @@ import React, { useState } from 'react'
 import CustomeInput from '../../../Common/CustomeInput';
 import { useModalContext } from '../../../Common/Modal';
 
+// email js
+import emailjs from '@emailjs/browser';
+
 export default function ContactForm() {
-    const {setModalText , openModal} = useModalContext();
+    const { setModalText, openModal } = useModalContext();
     const [formData, setFormData] = useState({
         name: { value: "", error: false },
         email: { value: "", error: false },
@@ -32,9 +35,22 @@ export default function ContactForm() {
             }
             setModalText(`We received your message`);
             openModal();
-            console.log(result);
+            sendDataViaEmail(result);
             emptyAllFields();
         }
+    }
+
+    const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+    const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+    const PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+
+    const sendDataViaEmail = (data) => {
+        emailjs.send(SERVICE_ID, TEMPLATE_ID, {
+            client_name: data.name,
+            client_email: data.email,
+            client_phone: data.phone,
+            client_message: data.message,
+        }, PUBLIC_KEY);
     }
 
     const emptyAllFields = () => {
