@@ -6,7 +6,7 @@ import './home.css'
 export default function Home() {
     return (
         <div>
-            <img src="assets\images\top.svg" className="top-svg not-mobile" alt='top image'/>
+            <img src="assets\images\top.svg" className="top-svg not-mobile" alt='top'/>
             <br />
             <br />
             <br />

@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef, useEffect } from 'react'
 
 // Tom Tom map
 import '@tomtom-international/web-sdk-maps/dist/maps.css'
