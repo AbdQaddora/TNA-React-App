@@ -18,13 +18,13 @@ export default function Footer() {
                 <div className='row p-md-3 pl-md-5 pr-md-5 '>
                     <div className='col-md p-3'>
                         <Link to="/" className="footer-logo">
-                            <img src="assets\images\logo.svg" />
+                            <img src="assets\images\logo.svg" alt="logo"/>
                         </Link>
                         <br />
-                        <a href='https://www.linkedin.com/' target="_blank">
+                        <a href='https://www.linkedin.com/' target="_blank" rel="noreferrer">
                             <GrLinkedinOption className='footer-icon' />
                         </a>
-                        <a href='https://www.instagram.com/' target="_blank">
+                        <a href='https://www.instagram.com/' target="_blank" rel="noreferrer">
                             <AiFillInstagram className='footer-icon' />
                         </a>
                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy </p>

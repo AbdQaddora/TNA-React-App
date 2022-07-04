@@ -6,7 +6,7 @@ import { ImWhatsapp } from 'react-icons/im'
 const PHONE_NUMBER = 972599676231;
 export default function WhatsappBtn() {
     return (
-        <a href={`https://wa.me/${PHONE_NUMBER}`} className='whatsapp-btn d-flex justify-content-center align-items-center' target="_blank">
+        <a href={`https://wa.me/${PHONE_NUMBER}`} className='whatsapp-btn d-flex justify-content-center align-items-center' target="_blank" rel="noreferrer">
             <ImWhatsapp />
         </a>
     )
