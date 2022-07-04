@@ -1,0 +1,16 @@
+.gallary-card-title {
+    justify-self: flex-start !important;
+    width: 100%;
+}
+
+.gallery-card img {
+    width: 100% !important;
+}
+
+.gallery-card{
+    transition: var(--trans);
+}
+
+.gallery-card:hover {
+    transform: scale(1.03);
+}

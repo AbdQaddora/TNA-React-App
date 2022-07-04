@@ -1,0 +1,29 @@
+footer {
+    background-color: #F2F2F2;
+}
+
+.footer-logo {
+    cursor: pointer;
+    display: block;
+    width: fit-content;
+}
+
+.footer-icon {
+    color: rgba(34, 34, 34, 0.822);
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    cursor: pointer;
+    margin-inline-end: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-link{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 0.5rem;
+}
+
+.footer-bottom{
+    background-color: #000;
+    font-size: clamp(1rem , 1.2vw , 1.2rem);
+}

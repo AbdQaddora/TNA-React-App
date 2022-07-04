@@ -1,0 +1,115 @@
+html * {
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --clr1: #1A9AC4;
+  --clr2: #707070;
+  --clr3: #E50E7A;
+  --clr4: #FBED18;
+  font-family: 'Red Hat Display', sans-serif;
+  --trans: all 0.4s ease-in-out;
+  --font-14: 14px;
+  --font-16: 16px;
+}
+
+body {
+  overflow-x: hidden;
+  background: #F4F5F7;
+  transition: var(--trans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+a:hover,
+a:focus,
+a:active,
+button:hover,
+button:focus,
+button:active,
+div,
+section,
+span,
+p,
+div:hover,
+section:hover,
+span:hover,
+p:hover {
+  text-decoration: none;
+  outline: none;
+}
+
+select,
+input[type="checkbox"],
+input[type="radio"],
+select:focus,
+input[type="checkbox"]:focus,
+input[type="radio"]:focus {
+  cursor: pointer;
+}
+
+.my-btn {
+  border-radius: 25px;
+  background-color: var(--clr1);
+  color: #fff;
+  margin-inline-start: 15px;
+  transition: var(--trans);
+}
+
+
+.my-btn:hover {
+  background-color: var(--clr3);
+  color: #fff !important;
+}
+
+.my-btn-2 {
+  background-color: #3F3F3E;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+}
+
+.top-svg {
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.custome-input {
+  border-bottom: 1px solid #000 !important;
+}
+
+.custome-input.error {
+  border-bottom: 3px solid #dc3545 !important;
+  color: #dc3545;
+}
+
+/* used in careers form and in get qoute */
+.file-upload{
+  display: none !important;
+}
+
+.file-upload-label{
+  background-color: var(--clr1);
+  width: fit-content;
+  cursor: pointer;
+}

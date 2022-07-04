@@ -1,0 +1,13 @@
+.map-container {
+    min-height: 520px;
+}
+
+.marker {
+    --marker-size: 30px;
+    /* background-image: url(assets/images/marker.svg); */
+    min-height: var(--marker-size);
+    width: var(--marker-size);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

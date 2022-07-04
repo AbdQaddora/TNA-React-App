@@ -1,0 +1,17 @@
+.our-clients{
+    background-color: #fff;
+}
+
+.our-clients *{
+    user-select: none;
+}
+.swiper {
+    width: 100%;
+    height: fit-content;
+}
+
+.swiper-prev , .swiper-next{
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
