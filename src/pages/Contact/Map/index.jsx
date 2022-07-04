@@ -29,7 +29,7 @@ export default function Map({ lat, lng }) {
         map.scrollZoom.disable();
 
         return () => map.remove();
-    }, [lat, lng]);
+    }, [lat, lng , API_KEY]);
     return (
         <div ref={mapElement} className="map-container"></div>
     )
