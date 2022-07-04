@@ -49,7 +49,7 @@ export default function JobForm() {
                 return { ...prev, phone: { value: "", error: true } }
             })
             return false;
-        } else if (CV.value == "") {
+        } else if (CV.value === "") {
             setFormData(prev => {
                 return { ...prev, CV: { value: "", error: true } }
             })

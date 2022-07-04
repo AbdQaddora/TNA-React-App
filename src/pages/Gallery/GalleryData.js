@@ -1,4 +1,4 @@
-export default [
+const galleryData = [
     {
         title:"Lorem ipsum",
         img:"assets/images/Gallery/pic1.png"
@@ -35,4 +35,6 @@ export default [
         title:"Lorem ipsum",
         img:"assets/images/Gallery/pic9.png"
     }
-]
+];
+
+export default galleryData;

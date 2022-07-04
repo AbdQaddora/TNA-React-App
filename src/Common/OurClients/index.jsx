@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 // swiper
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';

@@ -9,7 +9,6 @@ import './map.css'
 
 export default function Map({ lat, lng }) {
     const mapElement = useRef(null);
-    const [map, setMap] = useState({});
 
     useEffect(() => {
         let map = tt.map({
@@ -22,14 +21,13 @@ export default function Map({ lat, lng }) {
         markerImg.src = 'assets/images/marker.svg'
         markerImg.className = "marker";
 
-        let marker = new tt.Marker({
+        new tt.Marker({
             element: markerImg,
         }).setLngLat([lng, lat]).addTo(map);
         map.scrollZoom.disable();
 
-        setMap(map);
         return () => map.remove();
-    }, []);
+    }, [lat, lng]);
     return (
         <div ref={mapElement} className="map-container"></div>
     )

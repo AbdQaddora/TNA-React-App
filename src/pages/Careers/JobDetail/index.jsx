@@ -13,7 +13,7 @@ import jobsData from '../jobs-data'
 import './jobDetail.css'
 export default function JobDetail() {
     const { jobId } = useParams();
-    const jobData = jobsData.find(el => el.jobId == jobId)
+    const jobData = jobsData.find(el => el.jobId === jobId)
 
     return (
         <>

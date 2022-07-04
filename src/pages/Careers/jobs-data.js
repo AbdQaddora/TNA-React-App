@@ -1,4 +1,4 @@
-export default [
+const jobsData = [
     {
         jobTitle: "Business Analyst",
         jobId: "business-analyst",
@@ -29,4 +29,6 @@ export default [
         jobDesc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum possimus ipsum, nulla tempore obcaecati id explicabo nemo expedita deserunt asperiores suscipit optio quod provident quae consequatur ipsam numquam earum vitae Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum possimus ipsum, nulla tempore obcaecati id explicabo nemo expedita deserunt asperiores suscipit optio quod provident quae consequatur ipsam numquam earum vitae!",
         jobWork: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum possimus ipsum, nulla tempore obcaecati id explicabo nemo expedita deserunt asperiores suscipit optio quod provident quae consequatur ipsam numquam earum vitae Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum possimus ipsum, nulla tempore obcaecati id explicabo nemo expedita deserunt asperiores suscipit optio quod provident quae consequatur ipsam numquam earum vitae!"
     },
-]
+];
+
+export default jobsData;
