@@ -15,3 +15,7 @@
     outline: none;
     border: none;
 }
+
+.swiper-slide{
+    width: fit-content !important;
+}

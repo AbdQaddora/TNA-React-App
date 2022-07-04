@@ -104,12 +104,16 @@ input[type="radio"]:focus {
 }
 
 /* used in careers form and in get qoute */
-.file-upload{
+.file-upload {
   display: none !important;
 }
 
-.file-upload-label{
+.file-upload-label {
   background-color: var(--clr1);
   width: fit-content;
   cursor: pointer;
+}
+
+.fs-md-5 {
+  font-size: 1.30rem !important;
 }

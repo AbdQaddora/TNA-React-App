@@ -13,13 +13,10 @@ import './ourClients.css';
 // data
 import clientsData from './clientsData';
 
-// icons
 import { HiOutlineArrowNarrowRight, HiOutlineArrowNarrowLeft } from 'react-icons/hi'
 export default function OurClients() {
-
-
     return (
-        <div className='our-clients p-5'>
+        <div className='our-clients p-md-5 p-3'>
             <div className="container">
                 <div className="row mb-3">
                     <div className="col-md-4 col-12">
@@ -36,14 +33,13 @@ export default function OurClients() {
                 </div>
 
                 <Swiper
-                    slidesPerView={5}
+                    slidesPerView={"auto"}
                     modules={[Navigation]}
                     spaceBetween={50}
                     navigation={{
                         prevEl: '.swiper-prev',
                         nextEl: ".swiper-next",
                     }}
-                    loop={true}
                 >
                     {clientsData.map(el => {
                         return (
