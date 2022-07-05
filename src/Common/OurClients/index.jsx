@@ -14,7 +14,7 @@ export default function OurClients() {
             title_bold="Our Clients"
             swiper_description="Lorem, ipsum dolor sit amet consectetur elit. hi Non numquam reiciendis accusantium quam consectetur ratione?"
             slides={slides}
-            customeClassesList="our-clients"
+            customeClassesList="our-clients mb-0"
         />
     )
 }
