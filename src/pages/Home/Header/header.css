@@ -1,0 +1,9 @@
+.header_inner{
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+
+.header-img{
+    opacity: 0.7;
+}

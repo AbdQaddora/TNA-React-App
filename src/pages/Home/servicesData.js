@@ -21,7 +21,7 @@ const data = [
     },
     {
         icon: 'assets/images/Services/icons/exhibition.png',
-        name: "Exhibition",
+        name: "exhibition",
         description: "Event management, in short, is the creation, development and management of any kind of event",
         header_img: "assets/images/Services/production.png",
         slides: [

@@ -26,10 +26,10 @@ export default function OurServices() {
                     {data.map(el => {
                         const { icon, name, description } = el;
                         return (
-                            <div className='col-md-4  col-sm-6'>
+                            <div className='col-md-4  col-sm-6 service-card' key={el.name}>
                                 <div className='bg-white p-4'>
                                     <img src={icon} alt={name} />
-                                    <h5 className="card-title mb-2 text-uppercase">{name}</h5>
+                                    <h5 className="card-title mb-2 mt-2 text-uppercase">{name}</h5>
                                     <p className="card-disc max-lines-3">
                                         {description}
                                     </p>

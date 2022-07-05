@@ -1,6 +1,6 @@
 .max-lines-3{
     overflow: hidden;
     word-wrap: normal !important;
-    max-height: calc(1.5rem * 3);
+    height: calc(1.5rem * 3);
     line-height: 1.5rem;
 }
