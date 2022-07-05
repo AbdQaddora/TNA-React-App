@@ -7,7 +7,7 @@ import Footer from './Common/Footer';
 import Modal, { ModalContextProvider } from './Common/Modal';
 // Pages
 import Home from "./pages/Home";
-import SeviceDetail from './pages/Home/SeviceDetail';
+import Services from './pages/Home/Services';
 
 import About from "./pages/About";
 import Gallery from "./pages/Gallery";
@@ -32,7 +32,7 @@ function App() {
           <WhatsappBtn />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/sevice-detail/:seviceId" element={<SeviceDetail />} />
+            <Route path="/services/:servicesName" element={<Services />} />
             <Route path="/careers/:jobId" element={<JobDetail />} />
             <Route path="/about" element={<About />} />
             <Route path="/gallery" element={<Gallery />} />
