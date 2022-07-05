@@ -21,7 +21,7 @@ export default function Management() {
         <CustomeSwiper
             title_light="Keeping morale high "
             title_bold="Management"
-            swiper_discreption="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non numquam reiciendis accusantium quam consectetur ratione?"
+            swiper_discreption="Lorem, ipsum dolor sit amet consectetur elit. hi Non numquam reiciendis accusantium quam consectetur ratione?"
             slides={slides}
             customeClassesList="management"
         />)

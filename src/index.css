@@ -85,6 +85,12 @@ input[type="radio"]:focus {
   background-color: #3F3F3E;
   padding-left: 25px !important;
   padding-right: 25px !important;
+  width: fit-content;
+  transform: var(--trans);
+}
+
+.my-btn-2:hover{
+  background-color: #272727;
 }
 
 .top-svg {
@@ -121,6 +127,10 @@ input[type="radio"]:focus {
 
 .fs-7 {
   font-size: 0.8rem;
+}
+
+.text-info{
+  color: var(--clr1) !important;
 }
 
 /* custom scroll bar */

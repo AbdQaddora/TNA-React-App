@@ -15,14 +15,14 @@ import { HiOutlineArrowNarrowRight, HiOutlineArrowNarrowLeft } from 'react-icons
 
 export default function CustomeSwiper({ title_light, title_bold, swiper_discreption, slides, customeClassesList }) {
     return (
-        <div className={`${customeClassesList ? customeClassesList : ""} p-md-5 p-3`}>
+        <div className={`${customeClassesList ? customeClassesList : ""} p-md-5 p-2 pt-3 mt-3 mb-3`}>
             <div className="container">
                 <div className="row mb-3">
-                    <div className="col-md-4 col-12">
+                    <div className="col-md-3 col-12">
                         <p className="fs-6 mb-0">{title_light}</p>
                         <h3 className='fs-2 fw-bold'>{title_bold}</h3>
                     </div>
-                    <div className="col-md-6 col-12">
+                    <div className="col-md-7 col-12 swiper-discreption">
                         {swiper_discreption}
                     </div>
                     <div className="col-md-2 d-md-block d-none ">
@@ -39,7 +39,7 @@ export default function CustomeSwiper({ title_light, title_bold, swiper_discrept
                         prevEl: `.prev-${title_bold}`,
                         nextEl: `.next-${title_bold}`,
                     }}
-                    loop={true}
+                    // loop={true}
                     autoplay={{
                         delay: 2500,
                         disableOnInteraction: false,

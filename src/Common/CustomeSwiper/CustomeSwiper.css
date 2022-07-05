@@ -17,3 +17,7 @@
 .swiper-slide {
     width: fit-content !important;
 }
+
+.swiper-discreption{
+    font-size: 1rem;
+}

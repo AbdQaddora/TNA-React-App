@@ -2,13 +2,12 @@
     max-width: 280px;
 }
 
-.gallary-swiper {
-    padding: 0 !important;
+
+.gallary-container-fluid{
+    width: 100%;
+    overflow: hidden;
 }
-/* 
-.gallary-swiper .container {
-    padding-inline-end: 0 !important;
-} */
+
 
 .gallary-swiper .swiper {
     overflow: visible;
@@ -18,9 +17,17 @@
     content: "";
     background-color: var(--body-bg);
     width: 100vw;
-    height: 100%;
+    height: 120%;
     position: absolute;
+    transform: translateY(-50%);
     right: 100%;
-    top: 0;
+    top: 50%;
     z-index: 999;
+}
+
+@media (max-width: 991px) {
+    .gallary-swiper-img {
+        width: 100% !important;
+        object-fit: cover;
+    }
 }
