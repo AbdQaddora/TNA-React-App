@@ -84,8 +84,8 @@ export default function GetQuote() {
   return (
     <div>
       <PageTitle title="Get a Quote" />
-      <div className='fs-6 text-center container p-5 pt-2'>
-        <p className='p-5 pt-0 pb-0'>TNA design team is group of experts in advertising & branding field. Hold the key of architects & find the deep meanings of your slogan behind their door. Turn your ideas into 3D vision to create your own project world. With TNA, Launch to rein yourself. Set your own ID to keep your special impression on your customers.</p>
+      <div className='fs-6 text-center container p-md-5 pt-2'>
+        <p className='p-md-5 pt-0 pb-0'>TNA design team is group of experts in advertising & branding field. Hold the key of architects & find the deep meanings of your slogan behind their door. Turn your ideas into 3D vision to create your own project world. With TNA, Launch to rein yourself. Set your own ID to keep your special impression on your customers.</p>
       </div>
       <form className="container" onSubmit={sendData}>
         <div className="row gy-lg-5 gy-md-3 gy-1">
