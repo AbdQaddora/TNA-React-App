@@ -5,11 +5,13 @@ import GallerySection from './GallerySection'
 // css
 import './home.css'
 import Management from './ManagementSection'
+import OurServices from './OurServices'
 
 export default function Home() {
     return (
         <div>
             {/* <img src="assets\images\top.svg" className="top-svg not-mobile" alt='top' /> */}
+            <OurServices />
             <AboutTNA />
             <GallerySection />
             <Management />

@@ -13,7 +13,7 @@ export default function GallerySection() {
             <CustomeSwiper
                 title_light="MY WORKS"
                 title_bold="Gallery"
-                swiper_discreption="Lorem, ipsum dolor sit amet consectetur elit. hi Non numquam reiciendis accusantium quam consectetur ratione?"
+                swiper_description="Lorem, ipsum dolor sit amet consectetur elit. hi Non numquam reiciendis accusantium quam consectetur ratione?"
                 slides={slides}
                 customeClassesList="gallary-swiper"
             />

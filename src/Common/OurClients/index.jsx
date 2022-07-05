@@ -12,7 +12,7 @@ export default function OurClients() {
         <CustomeSwiper
             title_light="Happy Customers"
             title_bold="Our Clients"
-            swiper_discreption="Lorem, ipsum dolor sit amet consectetur elit. hi Non numquam reiciendis accusantium quam consectetur ratione?"
+            swiper_description="Lorem, ipsum dolor sit amet consectetur elit. hi Non numquam reiciendis accusantium quam consectetur ratione?"
             slides={slides}
             customeClassesList="our-clients"
         />

@@ -11,7 +11,7 @@ export default function AboutTNA() {
           <img src="assets/images/aboutTNA.png" alt="about TNA" className='about-tna-img img-fluid' />
         </div>
         <div className="col-md-6 d-flex flex-column justify-content-center flex-shrink-1">
-          <p className="fs-6 text-uppercase">Who we are</p>
+          <p className="fs-6 text-uppercase mb-md-1 mb-0">Who we are</p>
           <h4 className="fs-4 fw-bold">About <span className="text-info">TNA</span></h4>
           <p className="fs-6">We consider ourselves a distinct mark in the field of offering advertising services since 1997 AD. We are offering our services for realizing the achievement after the other. Our experience and long-practice in our field helped us to realize a respectable position and an appropriate spread allowing us to serve many sectors inside the Kuwaiti market.</p>
           <button className='btn my-btn-2 width-fit-content rounded-pill fs-5 mt-3'>
