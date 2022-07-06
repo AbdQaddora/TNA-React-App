@@ -9,7 +9,7 @@ import './management.css'
 export default function Management() {
     const slides = data.map(el => {
         return (
-            <div className="management-card">
+            <div className="management-card" key={el.name}>
                 <img src={el.img} alt={el.name} />
                 <span className="text-info fs-7">{el.job_title}</span>
                 <p className="fw-bold fs-5">{el.name}</p>

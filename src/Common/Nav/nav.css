@@ -25,9 +25,3 @@
 .toogle-btn{
     cursor: pointer;
 }
-
-@media (max-width: 991px) {
-    .only-mobile{
-         display: flex !important;
-    }
-}

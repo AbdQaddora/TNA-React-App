@@ -1,5 +1,6 @@
 import React from 'react'
-// swiper
+// nanoid 
+import { nanoid } from 'nanoid';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper';
@@ -46,7 +47,7 @@ export default function CustomeSwiper({ title_light, title_bold, swiper_descript
                     }}                >
                     {slides.map(el => {
                         return (
-                            <SwiperSlide key={Math.random()}>
+                            <SwiperSlide key={nanoid()}>
                                 {el}
                             </SwiperSlide>
                         )

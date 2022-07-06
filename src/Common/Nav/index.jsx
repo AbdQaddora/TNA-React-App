@@ -29,7 +29,7 @@ export default function Nav() {
 
   return (
     <>
-      <nav className="navbar not-mobile navbar-expand-lg navbar-light">
+      <nav className="navbar d-none d-lg-flex navbar-expand-lg navbar-light">
         <div className="container">
           <Link to="/" className="navbar-brand">
             <img src="assets\images\logo.svg" alt='logo'/>
@@ -69,7 +69,7 @@ export default function Nav() {
         </div>
       </nav>
 
-      <nav className="my-nav-mobile only-mobile p-3  d-flex flex-row justify-content-between align-items-center position-relative" ref={mobileNav}>
+      <nav className="my-nav-mobile d-lg-none p-3  d-flex flex-row justify-content-between align-items-center position-relative" ref={mobileNav}>
         <BiMenu className="toogle-btn fs-3" onClick={toogleNav} />
         <Link to="/" className="logo-mobile">
           <img src="assets\images\logo-mobile.svg" alt='logo'/>

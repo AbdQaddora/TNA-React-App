@@ -1,4 +1,6 @@
 import React from 'react'
+// nanoid
+import {nanoid} from 'nanoid'
 // components
 import PageTitle from '../../Common/PageTitle'
 // css
@@ -14,7 +16,7 @@ export default function Gallery() {
           {GalleryData.map(el => {
             
             return (
-              <div key={Math.random()} className="col-md-4 col-sm-6 col-12 gallery-card d-flex align-items-center flex-column">
+              <div key={nanoid()} className="col-md-4 col-sm-6 col-12 gallery-card d-flex align-items-center flex-column">
                 <img className="img-fluid" src={el.img} alt={el.title} />
                 <h3 className='mt-3 fs-4 gallary-card-title text-uppercase'>{el.title}</h3>
               </div>

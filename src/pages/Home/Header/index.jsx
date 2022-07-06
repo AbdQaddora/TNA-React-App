@@ -1,4 +1,5 @@
 import React from 'react'
+
 // react router
 import { Link } from 'react-router-dom';
 // swiper
@@ -30,7 +31,7 @@ export default function Header() {
                         >
                             {data.map(el => {
                                 return (
-                                    <SwiperSlide>
+                                    <SwiperSlide key={el.name}>
                                         <div className="row">
                                             <div className="col-md-6 d-flex flex-column justify-content-center">
                                                 <h1 className="fs-1 fw-bold text-info text-uppercase">{el.name}</h1>
