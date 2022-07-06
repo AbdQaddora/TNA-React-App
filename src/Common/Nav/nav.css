@@ -3,9 +3,6 @@
     margin-inline-start: auto;
 }
 
-.only-mobile{
-    display: none !important;
-}
 /* mobile nav */
 .my-nav-mobile{
     color: #fff;
