@@ -1,4 +1,5 @@
 import React, { useState, createContext, useContext } from 'react'
+import BtnBlack from '../BtnBlack';
 // css
 import './modal.css'
 const ModalContext = createContext(null);
@@ -9,8 +10,9 @@ export default function Modal() {
             <div className='my-modal text-center p-5 rounded'>
                 <p className="fs-3 ">Thank You!</p>
                 <p className="fs-5 ps-5 pe-5">
-                    {modalText}</p>
-                <button className='btn my-btn-2 text-white rounded-pill fs-5 mt-2' onClick={closeModal}>OK</button>
+                    {modalText}
+                </p>
+                <BtnBlack onClick={closeModal}>OK</BtnBlack>
             </div>
         </div>
     )

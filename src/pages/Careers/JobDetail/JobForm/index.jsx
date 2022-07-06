@@ -6,6 +6,8 @@ import { AiOutlinePlus } from 'react-icons/ai'
 
 // modal context
 import { useModalContext } from '../../../../Common/Modal';
+import UploadFile from '../../../../Common/UploadFile';
+import BtnBlack from '../../../../Common/BtnBlack';
 
 export default function JobForm() {
     const { setModalText, openModal } = useModalContext();
@@ -95,9 +97,8 @@ export default function JobForm() {
             <p className='fs-5 mt-5'>Upload CV</p>
             <span className={`fs-6 ${wrongInFileFormat ? "text-danger" : "text-primary"}`}>(File should be in doc, .docx ,Pdf format)</span>
             <div className="d-flex">
-                <input type="file" id='file-upload' accept=".pdf,.doc,.docx" onChange={handelChange} className="file-upload" name="CV" />
-                <label htmlFor="file-upload" className={`file-upload-label mr-3 fs-1 ${formData.CV.error && 'bg-danger'} rounded-3 d-flex p-1 mt-3 text-white`}><AiOutlinePlus /></label>
-                <button className='btn my-btn-2 text-white rounded-pill fs-5 mt-3'>Apply</button>
+                <UploadFile accept={".pdf,.doc,.docx"} onChange={handelChange} error={formData.CV.error} name="CV" />
+                <BtnBlack>Apply</BtnBlack>
             </div>
         </form>
     )

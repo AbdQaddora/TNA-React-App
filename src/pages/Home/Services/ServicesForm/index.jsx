@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import { AiOutlinePlus } from 'react-icons/ai';
+import BtnBlack from '../../../../Common/BtnBlack';
 import CustomeInput from '../../../../Common/CustomeInput';
 import { useModalContext } from '../../../../Common/Modal';
-import data from '../../servicesData';
+import UploadFile from '../../../../Common/UploadFile';
 
 export default function ServicesForm() {
 
@@ -35,6 +35,7 @@ export default function ServicesForm() {
         email: formData.email.value,
         phone: formData.phone.value,
         serivce: formData.serivce.value,
+        message: formData.message.value,
         file: formData.file.value
       }
       console.log(result);
@@ -48,12 +49,7 @@ export default function ServicesForm() {
         return { ...prev, phone: { value: "", error: true } }
       })
       return false;
-    } else if (file.value === "") {
-      setFormData(prev => {
-        return { ...prev, CV: { value: "", error: true } }
-      })
-      return false;
-    } else if (!file.value.endsWith('.pdf')) {
+    } else if (file.value !== "" && !file.value.endsWith('.pdf')) {
       setWrongInFileFormat(true);
     } else {
       setModalText("Your Application is in review. We will contact you soon!");
@@ -69,7 +65,7 @@ export default function ServicesForm() {
       name: { value: "", error: false },
       email: { value: "", error: false },
       phone: { value: "", error: false },
-      job: { value: "", error: false },
+      serivce: { value: "", error: false },
       message: { value: "", error: false },
       file: { value: "", error: false },
     });
@@ -94,12 +90,13 @@ export default function ServicesForm() {
       <CustomeInput type="text" label="Message" value={formData.message.value}
         onChange={handelChange} name="message" isRequired={true} error={formData.message.error} />
 
+
       <p className='fs-6 mt-3'>Upload file <span className='text-primary'>(Optional)</span></p>
       <span className={`fs-6 ${wrongInFileFormat ? "text-danger" : "text-primary"}`}>(File should be in pdf format)</span>
+
       <div className="d-flex mb-3">
-        <input type="file" id='file-upload' accept=".pdf" onChange={handelChange} className="file-upload" name='file' />
-        <label htmlFor="file-upload" className={`file-upload-label mr-3 fs-1 ${formData.file.error && 'bg-danger'} rounded-3 d-flex p-1 mt-3 text-white`}><AiOutlinePlus /></label>
-        <button className='btn my-btn-2 text-white rounded-pill fs-5 mt-3'>Send</button>
+        <UploadFile accept=".pdf" onChange={handelChange} error={formData.file.error} name="file" />
+        <BtnBlack>Send</BtnBlack>
       </div>
     </form>
   )

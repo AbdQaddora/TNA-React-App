@@ -6,6 +6,7 @@ import { useModalContext } from '../../../Common/Modal';
 
 // email js
 import emailjs from '@emailjs/browser';
+import BtnBlack from '../../../Common/BtnBlack';
 
 export default function ContactForm() {
     const { setModalText, openModal } = useModalContext();
@@ -93,7 +94,7 @@ export default function ContactForm() {
                     name="message" isRequired={true} error={formData.message.error} />
             </div>
             <div className="col-md-6">
-                <button className='btn my-btn-2 text-white rounded-pill fs-5 mt-3'>Send</button>
+                <BtnBlack>Send</BtnBlack>
             </div>
         </form>
     )

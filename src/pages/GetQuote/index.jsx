@@ -9,6 +9,8 @@ import { AiOutlinePlus } from 'react-icons/ai'
 import './getQuote.css'
 // context
 import { useModalContext } from '../../Common/Modal'
+import UploadFile from '../../Common/UploadFile'
+import BtnBlack from '../../Common/BtnBlack'
 
 export default function GetQuote() {
   const { setModalText, openModal } = useModalContext();
@@ -114,12 +116,12 @@ export default function GetQuote() {
               value={formData.message.value} name="message" isRequired={true} error={formData.message.error} />
           </div>
           <div className="col-lg-4 col-md-6">
+
             <p className='fs-6'>Upload file <span className='text-primary'>(Optional)</span></p>
             <span className={`fs-6 ${wrongInFileFormat ? "text-danger" : "text-primary"}`}>(File should be in pdf format)</span>
-            <div className="d-flex mb-3">
-              <input type="file" id='file-upload' accept=".pdf" onChange={handelChange} className="file-upload" name='file'/>
-              <label htmlFor="file-upload" className={`file-upload-label mr-3 fs-1 ${formData.file.error && 'bg-danger'} rounded-3 d-flex p-1 mt-3 text-white`}><AiOutlinePlus /></label>
-              <button className='btn my-btn-2 text-white rounded-pill fs-5 mt-3'>Send</button>
+            <div className="d-flex">
+              <UploadFile accept=".pdf" onChange={handelChange} error={formData.file.error} name="file" />
+              <BtnBlack>Apply</BtnBlack>
             </div>
           </div>
         </div>
