@@ -1,9 +1,6 @@
 import React, { useState } from 'react'
 import CustomeInput from '../../../../Common/CustomeInput'
 
-// icons
-import { AiOutlinePlus } from 'react-icons/ai'
-
 // modal context
 import { useModalContext } from '../../../../Common/Modal';
 import UploadFile from '../../../../Common/UploadFile';

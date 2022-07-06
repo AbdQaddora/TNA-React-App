@@ -1,16 +1,15 @@
 import React, { useState } from 'react'
+// components
 import CustomeInput from '../../Common/CustomeInput'
 import PageTitle from '../../Common/PageTitle'
-
-// icons
-import { AiOutlinePlus } from 'react-icons/ai'
+import UploadFile from '../../Common/UploadFile'
+import BtnBlack from '../../Common/BtnBlack'
 
 // css
 import './getQuote.css'
+
 // context
 import { useModalContext } from '../../Common/Modal'
-import UploadFile from '../../Common/UploadFile'
-import BtnBlack from '../../Common/BtnBlack'
 
 export default function GetQuote() {
   const { setModalText, openModal } = useModalContext();
