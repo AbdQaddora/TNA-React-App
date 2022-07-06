@@ -5,9 +5,6 @@ import PageTitle from '../../Common/PageTitle'
 import UploadFile from '../../Common/UploadFile'
 import BtnBlack from '../../Common/BtnBlack'
 
-// css
-import './getQuote.css'
-
 // context
 import { useModalContext } from '../../Common/Modal'
 
