@@ -4,7 +4,6 @@ const data = [
         name: "production",
         description: "Through the dictionary of industrial field, the world ( Quality ) is main source of magnificent creativity on finishing. TNA TEAM, promised their",
         header_img: "assets/images/Services/production.png",
-        header_img_mobile: "assets/images/Services/production_header_mobile.png",
         slides: [
             "assets/images/Services/slides/slid1.png",
             "assets/images/Services/slides/slid1.png"
@@ -15,7 +14,6 @@ const data = [
         name: "Signage",
         description: "Create a great first impression of your business and increase the visibility of your store and office",
         header_img: "assets/images/Services/production.png",
-        header_img_mobile: "assets/images/Services/production_header_mobile.png",
         slides: [
             "assets/images/Services/slides/slid1.png",
             "assets/images/Services/slides/slid1.png"
@@ -26,7 +24,6 @@ const data = [
         name: "exhibition",
         description: "Event management, in short, is the creation, development and management of any kind of event",
         header_img: "assets/images/Services/production.png",
-        header_img_mobile: "assets/images/Services/production_header_mobile.png",
         slides: [
             "assets/images/Services/slides/slid1.png",
             "assets/images/Services/slides/slid1.png"

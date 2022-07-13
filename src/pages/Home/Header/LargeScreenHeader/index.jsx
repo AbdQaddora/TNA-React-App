@@ -12,7 +12,7 @@ import "swiper/css/navigation";
 // icons
 import { HiOutlineArrowNarrowLeft, HiOutlineArrowNarrowRight } from 'react-icons/hi';
 
-export default function LargeScreenHeader({data}) {
+export default function LargeScreenHeader({ data }) {
     return (
         <div className='container d-md-flex d-none'>
             <div className="row">
@@ -36,8 +36,11 @@ export default function LargeScreenHeader({data}) {
                                                 <Link to={`/services/${el.name}`} className='text-white text-decoration-none'>Read More.</Link>
                                             </button>
                                         </div>
-                                        <div className="col-md-6">
-                                            <img src={el.header_img} alt={el.name} className="img-fluid" />
+                                        <div className="col-md-6 header_img_container">
+                                            <img src={el.header_img} alt={el.name} className="img-fluid rounded-circle large-screen-header-img" />
+                                            <div className="header-shape header-blue-shape rounded-circle"></div>
+                                            <div className="header-shape header-yellow-shape"></div>
+                                            <div className="header-shape header-pink-shape rounded-pill"></div>
                                         </div>
                                     </div>
                                 </SwiperSlide>

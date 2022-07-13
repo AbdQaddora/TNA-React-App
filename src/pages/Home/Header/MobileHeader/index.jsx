@@ -15,7 +15,7 @@ export default function MobileHeader({ data }) {
                     return (
                         <SwiperSlide>
                             <Link to={`/services/${el.name}`}>
-                                <img src={el.header_img_mobile} alt={el.name} className='img-fluid header-img' />
+                                <img src={el.header_img} alt={el.name} className='img-fluid header-img' />
                                 <div className="header_inner">
                                     <h3 className="fs-3 fw-bold text-info text-uppercase">{el.name}</h3>
                                     <p className="fs-6 text-uppercase fw-bold text-dark">

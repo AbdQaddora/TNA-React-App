@@ -40,9 +40,8 @@ export default function CustomeSwiper({ title_light, title_bold, swiper_descript
                         prevEl: `.prev-${title_bold}`,
                         nextEl: `.next-${title_bold}`,
                     }}
-                    // loop={true}
                     autoplay={{
-                        delay: Math.random() * (3000 - 2000) + 2000,
+                        delay: Math.random() * (5000 - 4000) + 4000,
                         disableOnInteraction: false,
                     }}                >
                     {slides.map(el => {
