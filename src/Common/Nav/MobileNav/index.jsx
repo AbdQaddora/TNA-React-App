@@ -25,9 +25,9 @@ export default function MobileNav() {
         console.log(mobileNav.current.clientHeight);
         console.log(height);
     }
-    
+
     return (
-        <nav className="my-nav-mobile d-lg-none p-3  d-flex flex-row justify-content-between align-items-center position-relative" ref={mobileNav}>
+        <nav className="my-nav-mobile d-lg-none p-3  d-flex flex-row justify-content-between align-items-center position-relative mb-md-3" ref={mobileNav}>
             <BiMenu className="toogle-btn fs-3" onClick={toogleNav} />
             <Link to="/" className="logo-mobile">
                 <img src="assets\images\logo-mobile.svg" alt='logo' />
